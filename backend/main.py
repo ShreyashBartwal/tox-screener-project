@@ -10,7 +10,7 @@ app = FastAPI()
 # Allow Cross-Origin Resource Sharing (CORS) for your React app
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # The origin of your React app
+    allow_origins=["http://localhost:5173", "https://tox-screener-project-2hloaymsz-shreyashbartwals-projects.vercel.app", "https://tox-screener-project.vercel.app/"],  # The origin of your React app
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
