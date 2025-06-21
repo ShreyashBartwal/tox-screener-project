@@ -15,7 +15,7 @@ You can use a tool like Giphy Capture or Kap to record your screen.
 -->
 ![ToxScreener Demo](./docs/demo.gif)
 
-**Live Demo:** [**Link to Your Deployed Application Here**](https://your-live-demo-url.com)
+**Live Demo:** [Preclinical Toxicology Screener](https://tox-screener-project.vercel.app/)
 
 ## About The Project
 
