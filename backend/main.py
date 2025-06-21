@@ -8,11 +8,20 @@ import torch
 app = FastAPI()
 
 # Allow Cross-Origin Resource Sharing (CORS) for your React app
+origins = [
+    # For local development
+    "http://localhost:5173",
+    
+    # For the Vercel production and preview URLs
+    "https://tox-screener-project-2hloaymsz-shreyashbartwals-projects.vercel.app",
+    "https://tox-screener-project.vercel.app"  # Corrected: removed trailing slash
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://tox-screener-project-2hloaymsz-shreyashbartwals-projects.vercel.app", "https://tox-screener-project.vercel.app/"],  # The origin of your React app
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
