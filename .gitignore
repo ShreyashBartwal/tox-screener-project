@@ -1,0 +1,29 @@
+# Python virtual environment
+# This is created locally and should not be version controlled.
+backend/venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Frontend dependencies
+# This folder can be huge and is installed via `npm install`.
+frontend/node_modules/
+frontend/build/
+
+# Log files and environment variables
+*.log
+.env
+.env.*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE configuration files
+.vscode/
+.idea/
+
