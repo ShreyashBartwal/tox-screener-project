@@ -6,6 +6,7 @@ function App() {
   const [result, setResult] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const apiUrl = `${import.meta.env.VITE_API_URL}/predict`;
 
   const handleAnalyzeClick = async () => {
     setIsLoading(true);
@@ -14,7 +15,7 @@ function App() {
 
     try {
       // API endpoint is your FastAPI server
-      const response = await fetch('http://127.0.0.1:8000/predict', {
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text }),
